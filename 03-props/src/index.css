@@ -1,0 +1,47 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+html,
+body {
+  width: 100vw;
+  height: 100%;
+  color: white;
+}
+
+body {
+  background-color: black;
+}
+
+.navbar {
+  background-color: rgb(1, 53, 36);
+  color: bisque;
+  padding: 20px;
+  border: 2px solid yellow;
+}
+
+.parent {
+  border: 2px solid salmon;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+}
+
+img {
+  height: 20vh;
+  width: 20vw;
+  border: none;
+  object-fit: cover;
+}
+
+.card {
+  margin: 20px 0px;
+  display: flex;
+  border: 2px solid white;
+  background-color: #222;
+}
