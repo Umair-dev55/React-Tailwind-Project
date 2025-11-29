@@ -1,13 +1,14 @@
-import React from 'react'
-import Navbar from './Navbar'
+import React from "react";
+import Navbar from "./Navbar";
+import PageContent from "./PageContent";
 
 const Section1 = () => {
   return (
-    <div className='bg-blue-950 h-screen text-white'>
-        <Navbar/>
-        Lorem ipsum dolor sit amet.
+    <div className="h-screen text-black">
+      <Navbar />
+      <PageContent />
     </div>
-  )
-}
+  );
+};
 
-export default Section1
+export default Section1;
