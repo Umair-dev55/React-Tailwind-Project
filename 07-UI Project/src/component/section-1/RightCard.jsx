@@ -1,11 +1,17 @@
-import React from 'react'
+import React from "react";
+import RightCardContent from "./RightCardContent";
 
 const RightCard = () => {
   return (
-    <div className='  bg-red-500 rounded-4xl'>
-        <img className='h-[60vh] rounded-4xl' src="https://i.pinimg.com/1200x/3e/42/02/3e4202fa1b6fc4fc3efd5f8297996695.jpg" alt="" />
+    <div className="  h-full w-60 gap-2  overflow-hidden relative *:rounded-4xl">
+      <img
+        className="h-full w-full object-cover "
+        src="https://i.pinimg.com/736x/d3/ab/20/d3ab200e47233f96a5279af578b0fa68.jpg"
+        alt=""
+      />
+     <RightCardContent/>
     </div>
-  )
-}
+  );
+};
 
-export default RightCard
+export default RightCard;

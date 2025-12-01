@@ -3,7 +3,7 @@ import RightCard from "./RightCard";
 
 const RightContent = () => {
   return (
-    <div className="bg-green-400 h-[90%] w-3/4 p-6 ">
+    <div className="h-full w-2/3 bg-blue-200 p-6 ">
       <RightCard />
     </div>
   );
