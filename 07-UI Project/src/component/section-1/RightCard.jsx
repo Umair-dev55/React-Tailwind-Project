@@ -1,17 +1,17 @@
 import React from "react";
 import RightCardContent from "./RightCardContent";
 
-const RightCard = () => {
+const RightCard = (props) => {
   
   return (
-    <div className="  h-full w-70 shrink-0  relative *:rounded-4xl">
-      <img
-        className="h-full w-full object-cover
-"
-        src="https://i.pinimg.com/736x/c1/25/ae/c125ae1ab262ce5368aa4079f8a597c3.jpg"
-        alt=""
+    <div className=" h-full w-80 shrink-0  relative *:rounded-4xl">
+      <img className="h-full object-cover" src={props.img} alt="" />
+      <RightCardContent
+        color={props.color}
+        intro={props.intro}
+        tag={props.tag}
+        id={props.id}
       />
-     <RightCardContent/>
     </div>
   );
 };

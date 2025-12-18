@@ -1,1 +1,10 @@
 @import "tailwindcss";
+
+@theme {
+    --breakpoint-xs: 20rem;
+}
+
+/* Remove Scrollbar */
+*::-webkit-scrollbar {
+    display: none;
+}
