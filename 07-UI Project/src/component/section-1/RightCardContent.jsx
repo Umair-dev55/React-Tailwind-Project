@@ -7,7 +7,7 @@ const RightCardContent = () => {
         1
       </h2>
       <div>
-        <p className="text-lg leading-6 text-white mb-2">
+        <p className="text-lg leading-6 text-white mb-2 bg-blend-hard-light">
           Lorem ipsum, dolor sit amet consectetur adipisicing elit. Est, ab
           possimus! Laboriosam repudiandae ratione neque?
         </p>

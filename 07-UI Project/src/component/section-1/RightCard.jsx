@@ -2,11 +2,13 @@ import React from "react";
 import RightCardContent from "./RightCardContent";
 
 const RightCard = () => {
+  
   return (
-    <div className="  h-full w-60 gap-2  overflow-hidden relative *:rounded-4xl">
+    <div className="  h-full w-70 shrink-0  relative *:rounded-4xl">
       <img
-        className="h-full w-full object-cover "
-        src="https://i.pinimg.com/736x/d3/ab/20/d3ab200e47233f96a5279af578b0fa68.jpg"
+        className="h-full w-full object-cover
+"
+        src="https://i.pinimg.com/736x/c1/25/ae/c125ae1ab262ce5368aa4079f8a597c3.jpg"
         alt=""
       />
      <RightCardContent/>
