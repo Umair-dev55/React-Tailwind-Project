@@ -11,6 +11,7 @@ const App = () => {
       tag: "Satisfied",
       color: "blue",
     },
+
     {
       img: "https://i.pinimg.com/736x/bf/01/78/bf01785ea53028dcddfa4eaa3794291e.jpg",
       intro:
@@ -24,14 +25,14 @@ const App = () => {
       intro:
         "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repudiandae,ero?",
       tag: "banked",
-      color:"red",
+      color: "red",
     },
     {
       img: "https://i.pinimg.com/736x/04/a7/fb/04a7fbfc8dcf84d5d194c044b4d2d258.jpg",
       intro:
         "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repudiandae, ab ",
       tag: "Underbanked",
-      color:"cyan",
+      color: "cyan",
     },
   ];
   return (
