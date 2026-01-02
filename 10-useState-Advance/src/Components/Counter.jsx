@@ -1,20 +1,18 @@
 import React, { useState } from "react";
 
 const Counter = () => {
-  const [Counter, setCounter] = useState(5);
+  const [Counter, setCounter] = useState(0);
   let increase = () => {
     setCounter(Counter + 5);
   };
-  let Decrease = () => {
+  let decrease = () => {
     setCounter(Counter - 5);
   };
   return (
-    <div className="counter">
+    <div>
       <h1>{Counter}</h1>
-      <button className="" onClick={increase}>
-        Increse
-      </button>
-      <button onClick={Decrease}>Decrease</button>
+      <button onClick={increase}>Increase</button>
+      <button onClick={decrease}>Decrease</button>
     </div>
   );
 };
