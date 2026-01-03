@@ -1,19 +1,31 @@
 import React from "react";
+import { useState } from "react";
 
 const App = () => {
-  let formSubmit = (e) => {
+  const [title, settitle] = useState("");
+  let btnClicked = (e) => {
     e.preventDefault();
-    console.log("Form Submitted");
+    console.log("Clicked", title);
+  };
+  let inputClicked = (e) => {
+    settitle(e.target.value);
   };
   return (
     <div>
-      <form
-        onSubmit={(e) => {
-          formSubmit(e);
-        }}
-      >
-        <input type="text" placeholder="Enter Name" />
-        <button>Submit</button>
+      <form>
+        <input
+          type="text"
+          onChange={(e) => {
+            inputClicked(e);
+          }}
+        />
+        <button
+          onClick={(e) => {
+            btnClicked(e);
+          }}
+        >
+          Submit
+        </button>
       </form>
     </div>
   );
