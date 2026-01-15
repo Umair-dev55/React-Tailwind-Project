@@ -1,42 +1,84 @@
-import React from "react";
+import React, { useState } from "react";
 
 const App = () => {
+  const [title, settitle] = useState("");
+  const [details, setdetails] = useState("");
+  const [task, settask] = useState([]);
   let btnClicked = (e) => {
-    console.log(e.target.value);
+    e.preventDefault();
+    console.log("Clicked");
+    console.log(title, details);
+
+    let copyTask = { ...task };
+    copyTask.push = { title, details };
+    settask(copyTask);
+    console.log(copyTask);
+
+    settitle("");
+    setdetails("");
   };
   return (
-    <div>
-      <form
-        className="flex items-start justify-between gap-5 xs:p-4 md:p-10 xs:text-[12px]  md:text-3xl 
-      
-      "
-      >
-        <div className="flex flex-col *:border-2 gap-5 *:rounded-bl-4xl *:rounded-tr-4xl ">
+    <div className="*:bg-black text-white h-screen md:flex *:xs:p-5 *:lg:p-10 ">
+      <div className="md:w-1/2">
+        <h1 className="xs:text-2xl  md:text-4xl font-extrabold mb-5">
+          Add Notes Here
+        </h1>
+        <form
+          action=""
+          className="flex text-2xl *:p-5 *:border-2 gap-4 flex-col  *:rounded-2xl"
+        >
           <input
-            className="xs:p-2 md:p-5"
             type="text"
-            placeholder="Add Notes Heading"
+            placeholder="Enter Notes"
+            value={title}
             onChange={(e) => {
-              btnClicked(e);
+              settitle(e.target.value);
             }}
           />
           <textarea
-            className="xs:p-2  md:p-5 xs:h-30 md:h-80 rounded-2xl"
-            type="text"
-            placeholder="Write Details"
-          />
-          <button className="bg-[#888] text-black p-2 hover:bg-red-600 hover:text-white hover:border-0 transition-colors duration-700 animation-pulse">
+            placeholder="Enter Details"
+            name=""
+            id=""
+            className="h-[50vh]"
+            value={details}
+            onChange={(e) => {
+              setdetails(e.target.value);
+            }}
+          ></textarea>
+          <button
+            className="bg-amber-700 text-black active:scale-90"
+            onClick={(e) => {
+              btnClicked(e);
+            }}
+          >
             Add Notes
           </button>
+        </form>
+      </div>
+      <div className="lg:w-1/2 ">
+        <h1 className="xs:text-2xl  md:text-4xl font-extrabold pb-5">
+          Add Notes Here
+        </h1>
+        <div className="flex flex-wrap *:shrink-0 h-[80vh] overflow-auto gap-5 shadow-xl shadow-amber-500/70 hover:shadow-2xl hover:shadow-amber-600/80 transition-shadow duration-300 justify-center  *:rounded-2xl *:p-2 ">
+          <div className="xs:h-60 xs:w-50 xs2:h-40 xs2:w-40 bg-amber-700"></div>
+          <div className="xs:h-60 xs:w-50 xs2:h-40 xs2:w-40 bg-amber-700"></div>
+          <div className="xs:h-60 xs:w-50 xs2:h-40 xs2:w-40 bg-amber-700"></div>
+          <div className="xs:h-60 xs:w-50 xs2:h-40 xs2:w-40 bg-amber-700"></div>
+          <div className="xs:h-60 xs:w-50 xs2:h-40 xs2:w-40 bg-amber-700"></div>
+          <div className="xs:h-60 xs:w-50 xs2:h-40 xs2:w-40 bg-amber-700"></div>
+          <div className="xs:h-60 xs:w-50 xs2:h-40 xs2:w-40 bg-amber-700"></div>
+          <div className="xs:h-60 xs:w-50 xs2:h-40 xs2:w-40 bg-amber-700"></div>
+          <div className="xs:h-60 xs:w-50 xs2:h-40 xs2:w-40 bg-amber-700"></div>
+          <div className="xs:h-60 xs:w-50 xs2:h-40 xs2:w-40 bg-amber-700"></div>
+          <div className="xs:h-60 xs:w-50 xs2:h-40 xs2:w-40 bg-amber-700"></div>
+          <div className="xs:h-60 xs:w-50 xs2:h-40 xs2:w-40 bg-amber-700"></div>
+          <div className="xs:h-60 xs:w-50 xs2:h-40 xs2:w-40 bg-amber-700"></div>
+          <div className="xs:h-60 xs:w-50 xs2:h-40 xs2:w-40 bg-amber-700"></div>
+          <div className="xs:h-60 xs:w-50 xs2:h-40 xs2:w-40 bg-amber-700"></div>
+          <div className="xs:h-60 xs:w-50 xs2:h-40 xs2:w-40 bg-amber-700"></div>
+          <div className="xs:h-60 xs:w-50 xs2:h-40 xs2:w-40 bg-amber-700"></div>
         </div>
-        <div>
-          <img
-            className="rotate-y-180 "
-            src="https://static.vecteezy.com/system/resources/thumbnails/049/578/155/small/a-black-and-white-drawing-of-a-man-writing-png.png"
-            alt=""
-          />
-        </div>
-      </form>
+      </div>
     </div>
   );
 };
