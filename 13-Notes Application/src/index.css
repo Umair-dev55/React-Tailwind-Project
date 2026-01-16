@@ -1,8 +1,17 @@
+@font-face {
+  font-family: dancingScript;
+  src: url(./assets/fonts/DancingScript-Bold.ttf);
+  src: url(./assets/fonts/DancingScript-Medium.ttf);
+  src: url(./assets/fonts/DancingScript-Regular.ttf);
+  src: url(./assets/fonts/DancingScript-SemiBold.ttf);
+}
 @import "tailwindcss";
-
 @theme {
   --breakpoint-xs: 20rem;
   --breakpoint-2xs: 25rem;
+
+  /* fonts */
+  --font-dancingScript: dancingScript, "sans-serif";
 }
 ::-webkit-scrollbar {
   display: none;
