@@ -38,7 +38,7 @@ const App = () => {
         >
           <input
             type="text"
-            className="bg-[#111] font-serif md:text-3xl"
+            className="bg-[#111] font-serif text-3xl"
             placeholder="Enter Notes"
             value={title}
             onChange={(e) => {
@@ -49,7 +49,7 @@ const App = () => {
             placeholder="Enter Details"
             name=""
             id=""
-            className="xs:h-[25vh] md:h-[50vh] bg-[#111] font-serif md:text-3xl"
+            className="h-[50vh] bg-[#111] font-serif text-3xl"
             value={details}
             onChange={(e) => {
               setdetails(e.target.value);
