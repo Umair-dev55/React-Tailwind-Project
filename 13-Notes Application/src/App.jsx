@@ -6,11 +6,12 @@ const App = () => {
   const [task, settask] = useState([]);
   let btnClicked = (e) => {
     e.preventDefault();
+
     console.log("Clicked");
     console.log(title, details);
 
-    let copyTask = { ...task };
-    copyTask.push = { title, details };
+    let copyTask = [...task];
+    copyTask.push({ title, details });
     settask(copyTask);
     console.log(copyTask);
 
@@ -57,26 +58,20 @@ const App = () => {
       </div>
       <div className="lg:w-1/2 ">
         <h1 className="xs:text-2xl  md:text-4xl font-extrabold pb-5">
-          Add Notes Here
+          Recent Notes
         </h1>
-        <div className="flex flex-wrap *:shrink-0 h-[80vh] overflow-auto gap-5 shadow-xl shadow-amber-500/70 hover:shadow-2xl hover:shadow-amber-600/80 transition-shadow duration-300 justify-center  *:rounded-2xl *:p-2 ">
-          <div className="xs:h-60 xs:w-50 xs2:h-40 xs2:w-40 bg-amber-700"></div>
-          <div className="xs:h-60 xs:w-50 xs2:h-40 xs2:w-40 bg-amber-700"></div>
-          <div className="xs:h-60 xs:w-50 xs2:h-40 xs2:w-40 bg-amber-700"></div>
-          <div className="xs:h-60 xs:w-50 xs2:h-40 xs2:w-40 bg-amber-700"></div>
-          <div className="xs:h-60 xs:w-50 xs2:h-40 xs2:w-40 bg-amber-700"></div>
-          <div className="xs:h-60 xs:w-50 xs2:h-40 xs2:w-40 bg-amber-700"></div>
-          <div className="xs:h-60 xs:w-50 xs2:h-40 xs2:w-40 bg-amber-700"></div>
-          <div className="xs:h-60 xs:w-50 xs2:h-40 xs2:w-40 bg-amber-700"></div>
-          <div className="xs:h-60 xs:w-50 xs2:h-40 xs2:w-40 bg-amber-700"></div>
-          <div className="xs:h-60 xs:w-50 xs2:h-40 xs2:w-40 bg-amber-700"></div>
-          <div className="xs:h-60 xs:w-50 xs2:h-40 xs2:w-40 bg-amber-700"></div>
-          <div className="xs:h-60 xs:w-50 xs2:h-40 xs2:w-40 bg-amber-700"></div>
-          <div className="xs:h-60 xs:w-50 xs2:h-40 xs2:w-40 bg-amber-700"></div>
-          <div className="xs:h-60 xs:w-50 xs2:h-40 xs2:w-40 bg-amber-700"></div>
-          <div className="xs:h-60 xs:w-50 xs2:h-40 xs2:w-40 bg-amber-700"></div>
-          <div className="xs:h-60 xs:w-50 xs2:h-40 xs2:w-40 bg-amber-700"></div>
-          <div className="xs:h-60 xs:w-50 xs2:h-40 xs2:w-40 bg-amber-700"></div>
+        <div className="flex flex-wrap *:shrink-0 h-[80vh] overflow-auto gap-5 shadow-xl shadow-amber-500/70 hover:shadow-2xl hover:shadow-amber-600/80 transition-shadow duration-300 xs:justify-center md:justify-evenly *:rounded-2xl *:p-5 ">
+          {task.map((elem, idx) => {
+            return (
+              <div
+                key={idx}
+                className="xs:h-60 xs:w-50 xs2:h-40 xs2:w-40 bg-amber-700 leading-9"
+              >
+                <h3 className="text-xl break-all font-bold">{elem.title}</h3>
+                <h5 className="text-md  wrap-break">{elem.details}</h5>
+              </div>
+            );
+          })}
         </div>
       </div>
     </div>
