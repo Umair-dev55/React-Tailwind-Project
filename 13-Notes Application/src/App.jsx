@@ -78,7 +78,7 @@ const App = () => {
                 <h3 className="font-dancingScript text-3xl font-bold wrap-break  line-clamp-2">
                   {elem.title}
                 </h3>
-                <p className="font-serif text-xl wrap-break">{elem.details}</p>
+                <p className="font-serif xs:text-sm md:text-xl wrap-break">{elem.details}</p>
                 <button
                   className="bg-red-600 inline rounded-2xl text-white active:scale-90"
                   onClick={() => {
