@@ -16,3 +16,10 @@
 ::-webkit-scrollbar {
   display: none;
 }
+
+html,body {
+  scroll-behavior: smooth;
+}
+body{
+  background: linear-gradient(135deg, #061222 0%, #123249 50%, #2D5B75 100%);
+}

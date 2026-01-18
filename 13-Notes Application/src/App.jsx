@@ -26,7 +26,7 @@ const App = () => {
     // console.log(task);
   };
   return (
-    <div className="*:bg-black text-white h-screen md:flex *:xs:p-5 *:lg:p-10 ">
+    <div className=" text-white h-screen md:flex *:xs:p-5 *:lg:p-10 ">
       <div className="md:w-1/4">
         <h1 className="font-dancingScript xs:text-2xl pb-5 md:text-6xl font-extrabold ">
           Add Notes
