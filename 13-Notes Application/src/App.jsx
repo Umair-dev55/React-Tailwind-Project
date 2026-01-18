@@ -73,7 +73,7 @@ const App = () => {
             return (
               <div
                 key={idx}
-                className="h-[40vh] w-80 leading-tight bg-[url('https://static.vecteezy.com/system/resources/thumbnails/010/793/873/small/a-lined-note-paper-covered-with-transparent-tape-on-a-yellow-background-with-a-white-checkered-pattern-free-png.png')] bg-center bg-cover flex flex-col justify-between *:p-3"
+                className="h-[45vh] w-80 leading-tight bg-[url('https://static.vecteezy.com/system/resources/thumbnails/010/793/873/small/a-lined-note-paper-covered-with-transparent-tape-on-a-yellow-background-with-a-white-checkered-pattern-free-png.png')] bg-center bg-cover flex flex-col justify-between *:p-3"
               >
                 <h3 className="font-dancingScript text-3xl font-bold wrap-break  line-clamp-2">
                   {elem.title}
