@@ -1,9 +1,12 @@
-import React from 'react'
+import React from "react";
 
 const App = () => {
-  return (
-    <div>App</div>
-  )
-}
+  // localStorage.setItem("age", "20");
+  let age = localStorage.getItem("age");
+  console.log(age);
 
-export default App
+  localStorage.clear;
+  return <div>App</div>;
+};
+
+export default App;
