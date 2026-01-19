@@ -68,19 +68,19 @@ const App = () => {
         <h1 className="font-dancingScript xs:text-2xl  md:text-6xl font-extrabold pb-5">
           Recent Notes
         </h1>
-        <div className="flex flex-wrap *:shrink-0 h-[80vh] overflow-auto gap-5 shadow-xl shadow-cyan-500/10 hover:shadow-2xl hover:shadow-cyan-600/90 transition-shadow duration-300 xs:justify-center md:justify-evenly *:rounded-2xl *:p-4 text-cyan-900">
+        <div className="flex flex-wrap *:shrink-0 h-[80vh] overflow-auto gap-5 shadow-xl shadow-cyan-500/10 hover:shadow-2xl hover:shadow-cyan-600/90 transition-shadow duration-300  *:rounded-2xl *:p-4 text-cyan-900 xs:justify-center  md:justify-start">
           {task.map((elem, idx) => {
             return (
               <div
                 key={idx}
-                className="h-[40vh] w-65 leading-tight bg-[url('https://static.vecteezy.com/system/resources/thumbnails/010/793/873/small/a-lined-note-paper-covered-with-transparent-tape-on-a-yellow-background-with-a-white-checkered-pattern-free-png.png')] bg-center bg-cover flex flex-col justify-between *:p-4"
+                className="h-[40vh] w-65 leading-tight bg-[url('https://static.vecteezy.com/system/resources/thumbnails/010/793/873/small/a-lined-note-paper-covered-with-transparent-tape-on-a-yellow-background-with-a-white-checkered-pattern-free-png.png')] bg-center bg-cover flex flex-col justify-between *:p-"
               >
-                <h3 className="font-dancingScript text-3xl font-bold wrap-break  line-clamp-2">
+                <h3 className="font-dancingScript text-3xl font-bold wrap-break  line-clamp-2 p-4">
                   {elem.title}
                 </h3>
-                <p className="font-serif xs:text-sm md:text-lg wrap-break">{elem.details}</p>
+                <p className="font-serif inline-block xs:text-sm md:text-lg wrap-break p-4">{elem.details}</p>
                 <button
-                  className="bg-red-600 inline rounded-2xl text-white active:scale-90"
+                  className="bg-red-600 rounded-2xl text-white active:scale-90 p-1 "
                   onClick={() => {
                     deleteTask(idx);
                   }}
