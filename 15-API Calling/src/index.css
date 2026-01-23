@@ -1,0 +1,10 @@
+*{
+    background-color: black;
+    color: white;
+}
+button{
+    padding: 20px;
+    border: none;
+    background-color: rgb(26, 85, 87);
+    border-radius: 10px;
+}
