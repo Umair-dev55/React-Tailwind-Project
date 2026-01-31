@@ -1,0 +1,25 @@
+@font-face {
+  font-family: dancingScript;
+  src: url(./assets/fonts/DancingScript-Bold.ttf);
+  src: url(./assets/fonts/DancingScript-Medium.ttf);
+  src: url(./assets/fonts/DancingScript-Regular.ttf);
+  src: url(./assets/fonts/DancingScript-SemiBold.ttf);
+}
+@import "tailwindcss";
+
+::-webkit-scrollbar {
+  display: none;
+}
+@theme {
+  /* fonts */
+  --font-dancingScript: dancingScript, "sans-serif";
+}
+
+html,
+body {
+  scroll-behavior: smooth;
+}
+body {
+  background: linear-gradient(135deg, #061222 0%, #123249 50%, #2d5b75 100%);
+  /* justify-content: ; */
+}
