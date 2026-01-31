@@ -4,7 +4,7 @@ import Cards from './assets/components/Cards'
 
 const App = () => {
     const [userData, setUserData] = useState([])
-    const [index, setIndex] = useState(2)
+    const [index, setIndex] = useState(1)
     let getData = async () => {
         let response = await axios.get(`https://picsum.photos/v2/list?page=${index}&limit=12`)
         setUserData(response.data)
