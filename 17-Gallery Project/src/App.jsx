@@ -26,7 +26,7 @@ const App = () => {
         <>
             {/* Buttons here  */}
             <div
-                className='fixed left-1/2 -translate-x-1/2 bg-black/60 rounded-b-full w-full py-2 lg:py-6'>
+                className='fixed left-1/2 -translate-x-1/2 bg-black/30 rounded-b-full w-full py-2 lg:py-6'>
                 < div
                     className='flex justify-center items-center gap-8 *:rounded   font-semibold *:cursor-pointer *:active:scale-90 text-white ' >
                     <button
