@@ -11,10 +11,13 @@ import Men from "./pages/Men";
 import Women from "./pages/Women";
 import Courses from "./pages/Courses";
 import CoursesDetails from "./pages/CoursesDetails";
+import Navbar2 from "./component/Navbar2";
+import Kids from "./pages/Kids";
 const App = () => {
   return (
     <div>
       <Navbar />
+      <Navbar2 />
       <Footer />
       <Routes>
         <Route path="/" element={<Home />}></Route>
@@ -22,6 +25,7 @@ const App = () => {
           <Route index element={<Product />}></Route>
           <Route path="men" element={<Men />}></Route>
           <Route path="women" element={<Women />}></Route>
+          <Route path="kids" element={<Kids />}></Route>
         </Route>
         {/* Nested Routes  Non Professional */}
         {/* <Route path="/product/men" element={<Men />}></Route>

@@ -11,6 +11,9 @@ const Product = () => {
         <Link to="/product/women">
           <h2>Women</h2>
         </Link>
+        <Link to="/product/kids">
+          <h2>Kids</h2>
+        </Link>
         <Outlet />
       </div>
       <h1>Product</h1>
