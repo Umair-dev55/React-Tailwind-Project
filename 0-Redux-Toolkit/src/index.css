@@ -1,0 +1,23 @@
+* {
+  margin: 0%;
+  padding: 0%;
+}
+html,
+body {
+  background: #000;
+  color: white;
+}
+button {
+  padding:4px 10px;
+  background-color: aqua;
+  border: none;
+
+  margin: 2px;
+  font-weight: 800;
+}
+h1 {
+  text-align: center;
+}
+div {
+  width: 42vh;
+}
